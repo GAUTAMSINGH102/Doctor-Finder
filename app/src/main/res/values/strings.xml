@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DoctorFinder</string>
+
+    <!--    OnBoarding String-->
+    <string name="heading_one">Quick and Easy Payment</string>
+    <string name="heading_two">Quick and Easy Payment</string>
+    <string name="heading_three">Quick and Easy Payment</string>
+    <string name="heading_fourth">Quick and Easy Payment</string>
+    <string name="desc_one">Doctor are here to help so do not hesitate in anything and say want you want say</string>
+    <string name="desc_two">Doctor are here to help so do not hesitate in anything and say want you want say</string>
+    <string name="desc_three">Doctor are here to help so do not hesitate in anything and say want you want say</string>
+    <string name="desc_fourth">Doctor are here to help so do not hesitate in anything and say want you want say</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

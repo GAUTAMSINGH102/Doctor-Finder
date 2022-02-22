@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Appointment"
+            android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+        <item
+            android:id="@+id/nav_all_categories"
+            android:title="Test Bookings"
+            android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+        <item
+            android:title="Consulatation"
+            android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+        <item
+            android:title="My Doctors"
+            android:icon="@drawable/ic_baseline_emoji_people_24"/>
+    </group>
+
+
+    <item android:title="Medical Records">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/medical_test"
+                    android:title="Medical Test"
+                    android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+                <item
+                    android:id="@+id/prescription"
+                    android:title="Prescription"
+                    android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+                <item
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_emoji_people_24"/>
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
