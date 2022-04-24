@@ -20,7 +20,7 @@ public class ApiClient {
             Gson gson = new GsonBuilder().create();
 
             RETROFIT = new Retrofit.Builder()
-                    .baseUrl("http://192.168.1.5/doctorfinder/")
+                    .baseUrl("http://192.168.1.2/doctorfinder/")
                     .client(okHttpClient)
                     .addConverterFactory(GsonConverterFactory.create(gson)).build();
         }

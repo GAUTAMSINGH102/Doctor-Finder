@@ -1,8 +1,10 @@
 package com.example.doctorfinder.Fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,6 +18,7 @@ import androidx.appcompat.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.doctorfinder.Activities.DoctorInfoActivity;
+import com.example.doctorfinder.Activities.VideoCalling;
 import com.example.doctorfinder.Adapters.DoctorViewAdapter;
 import com.example.doctorfinder.Adapters.SymptomsViewAdapter;
 import com.example.doctorfinder.Api.ApiClient;
@@ -40,6 +43,7 @@ public class ConsultFragment extends Fragment {
     private List<SymptomsModel> symptomsModelArrayList = new ArrayList<>();
     SearchView searchView;
     private SymptomsViewAdapter symptomsViewAdapter;
+    AppCompatButton chat, video;
     ApiInterface apiInterface;
 
     public ConsultFragment() {
@@ -52,6 +56,9 @@ public class ConsultFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_consult, container, false);
+
+        chat = rootView.findViewById(R.id.chat_consultation);
+        video = rootView.findViewById(R.id.video_consultation);
 
         recyclerView = rootView.findViewById(R.id.symptoms_recycler_view);
         Retrofit retrofit = ApiClient.getclient();
@@ -68,6 +75,21 @@ public class ConsultFragment extends Fragment {
             public boolean onQueryTextChange(String newText) {
                 symptomsViewAdapter.getFilter().filter(newText);
                 return false;
+            }
+        });
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), VideoCalling.class);
+                startActivity(intent);
             }
         });
 

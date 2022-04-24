@@ -24,11 +24,14 @@ public class DashBoard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dash_board);
 
+        // Applying the Bottom Navigation Bar in Dashboard
         BubbleNavigationLinearView navigationBar = findViewById(R.id.navigationBar);
 
         CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) navigationBar.getLayoutParams();
         layoutParams.setBehavior(new BottomBarBehaviour());
+        // Ending of Applying Bottom Navigation Bar
 
+        // By default this would be the Fragment in Dashboard
         getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
 
         navigationBar.setNavigationChangeListener(new BubbleNavigationChangeListener() {

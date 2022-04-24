@@ -11,24 +11,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.DoctorFinder">
+        android:theme="@style/Theme.DoctorFinder"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activities.VideoCalling"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.KnowMore"
+            android:exported="false" />
         <activity
             android:name=".Activities.DoctorInfoActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Activities.DashBoard"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".Activities.OnBoardingActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activities.OnBoardingActivity"
-            android:exported="true">
         </activity>
         <activity
             android:name=".Activities.SignInActivity"

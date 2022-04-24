@@ -94,7 +94,7 @@
                 android:orientation="vertical">
 
                 <!-- Start of Banner 1-->
-                <include layout="@layout/design_1" />
+<!--                <include layout="@layout/design_1" />-->
                 <!--  End of Banner 1-->
 
                 <!-- Start Our Offering-->

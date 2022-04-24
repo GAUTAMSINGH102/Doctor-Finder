@@ -15,6 +15,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doctorfinder.Activities.DashBoard;
+import com.example.doctorfinder.Activities.KnowMore;
 import com.example.doctorfinder.Activities.MainActivity;
 import com.example.doctorfinder.Models.DoctorModel;
 import com.example.doctorfinder.R;
@@ -86,13 +87,13 @@ public class DoctorViewAdapter extends RecyclerView.Adapter<DoctorViewAdapter.Vi
             public void onClick(View v) {
 //                Toast.makeText(context, doctorInfoList.get(position).getDoctor_position(), Toast.LENGTH_SHORT).show();
                 String post = doctorInfoList.get(position).getDoctorpost();
-                if(post.equals("Surgeon")) {
-                    Intent intent = new Intent(context, DashBoard.class);
+//                if(post.equals("Surgeon")) {
+                    Intent intent = new Intent(context, KnowMore.class);
                     intent.putExtra("position", post);
                     context.startActivity(intent);
-                } else {
-                    Toast.makeText(context, "This is not a Surgeon", Toast.LENGTH_SHORT).show();
-                }
+//                } else {
+//                    Toast.makeText(context, "This is not a Surgeon", Toast.LENGTH_SHORT).show();
+//                }
             }
         });
 

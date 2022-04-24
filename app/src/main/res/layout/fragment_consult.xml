@@ -60,6 +60,29 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/chat_consultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat Consultation"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/video_consultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Consultation"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
